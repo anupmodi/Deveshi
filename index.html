@@ -83,7 +83,7 @@ ul#nav li a{
   font-size:1.125rem;
 }
 
-ul#nav li a{
+ul#nav li a, .inlineBlock{
   display: inline-block;
 }
 
@@ -337,15 +337,13 @@ a:hover {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  padding-top: 50px; /* Location of the box */
-  padding-bottom:50px;
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  top: 30%; /* Location of the box */
+  left: 20%;
+  width: 60%; /* Full width */
+  height: 50%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-image: url("./images/blue-background-grainy-texture.png");
-  opacity:0.9;
+  opacity:1;
 }
 
 #caption {
@@ -422,29 +420,34 @@ a:hover {
 		<div class="profile">
 			<div class="lt">
 				<h2>Deveshi Modi</h2>
-				<p class="font20">Artist | Player | Social Worker | MUNer | Pianist | Programmer</p>
+				<p class="font20">Programmer | Artist | Player | Social Worker | MUNer | Classical Dancer  </p>
 			</div>
 			<div class="rt">
 				<img src="./images/deveshi.jpg" class="responsiveimg"/>
 			</div>
 		</div>
 	</div>
+	
 
-	<div class="sectionDiv brownBg" id="impact">
-		<div class="alignCenter pd3">
-			<h3 class="white">Impact</h3>
-			<div class="flex-container">
-				<div class="marginDiv">				
-					<div><a href="http://www.hutify.com" target="_blank"><img src="./images/pavs.jpg" class="responsiveimg"/></a></div>
-					<div class="center mrTp25 font20"><a href="http://www.hutify.com" target="_blank">Hutify.com</a></div>
-				</div>
-				<div class="marginDiv">
-					<div><a href="http://www.pavsngo.com/" target="_blank"><img src="./images/pavs.jpg" class="responsiveimg"/></a></div>
-					<div class="center mrTp25 font20"><a href="http://www.pavsngo.com/" target="_blank">PAVS</a></div>
+	<div id="impact" class="sectionDiv brownBg" >
+			<div class="alignCenter pd3">
+				<h3 class="white">Impact</h3>
+				<div class="flex-container">
+					<div class="marginDiv">				
+						<div><a href="http://www.hutify.com" target="_blank"><img src="./images/pavs.jpg" class="responsiveimg"/></a></div>
+						<div class="center mrTp25 font20"><a href="http://www.hutify.com" target="_blank">Hutify.com</a></div>
+					</div>
+					<div class="marginDiv">
+						<div><a href="http://www.pavsngo.com/" target="_blank"><img src="./images/pavs.jpg" class="responsiveimg"/></a></div>
+						<div class="center mrTp25 font20">
+							<div class="inlineBlock"><a href="http://www.pavsngo.com/" target="_blank">PAVS</a></div>
+							<div class="inlineBlock"><a href="https://www.facebook.com/pavsngo/?ref=page_internal" target="blank"/>| Our Facebook Page</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
 	</div><!--SectionDiv-->
+
 	<div class="sectionDiv">
 		<div class="alignCenter pd3 brown">			
 			<h3>Research and lab work</h3>
