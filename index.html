@@ -32,7 +32,7 @@ body,h1, p {
 /* Container for flexboxes */
 .sectionDiv, .headerDiv {
   width: 100%;
-  min-width: 1024px;
+  min-width: 1210px;
   float:left;
 }
 
@@ -48,8 +48,13 @@ body,h1, p {
 
 /* navigation bar */
 
-.navbar,.alignCenter, .profile {
+.navbar, .profile {
 	width: 1024px;
+	margin: 0 auto;
+}
+
+.alignCenter {
+	width: 1210px;
 	margin: 0 auto;
 }
 
@@ -260,6 +265,10 @@ h3 {
 	margin-top:15px;
 }
 
+.mrTp10 {
+	margin-top:10px;
+}
+
 .mrLt15 {
 	margin-left:15px;
 }
@@ -381,6 +390,63 @@ a:hover {
   cursor: pointer;
 }
 
+.highlight-module-content {
+    margin: 15px 4% 20px 0px;
+	width:28%;
+}
+
+.highlight-module-content .height {
+    min-height: 10%;
+}
+
+.highlight-module-content .height .photo {
+    border: #d4d3d3 solid 1px;
+    padding: 15% 0;
+	height:200px;
+	width:100%;
+}
+
+.photoInside {
+    line-height: 0;
+    position: relative;
+}
+
+.photoContent {
+    display: inline-block;
+    line-height: 0;
+    position: relative;
+    max-width: 100%;
+}
+
+.photoContent img {
+    display: inline;
+    height: auto !important;
+    max-width: 100%;
+    width: auto !important;
+}
+
+.highlightTitle {
+    padding: 8px 0;
+    background: #252729;
+    font-size: 14px;
+    color: #fff;
+    font-weight: normal;
+    width: 80%;
+    margin: auto;
+    border-radius: 4px;
+    position: relative;
+    top: -19px;
+}
+
+.courseDescription {
+	line-height: 1.4;
+	text-rendering: optimizeLegibility;
+	}
+
+.courseDescription h5 {
+	margin:5px;
+	}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
@@ -447,7 +513,7 @@ a:hover {
 						<div><a href="http://www.pavsngo.com/" target="_blank"><img src="./images/pavs.jpg" class="responsiveimg1"/></a></div>
 						<div class="center mrTp25 font20">
 							<div class="inlineBlock"><a href="http://www.pavsngo.com/" target="_blank">PAVS</a></div>
-							<div class="inlineBlock"><a href="https://www.facebook.com/pavsngo/?ref=page_internal" target="blank"/>| Our Facebook Page</div>
+							<div class="inlineBlock"><a href="https://www.facebook.com/pavsngo/?ref=page_internal" target="blank"/>| Our Facebook Page</a></div>
 						</div>
 					</div>
 				</div>
@@ -467,10 +533,155 @@ a:hover {
 	<div class="sectionDiv lightPinkBg" id="highlights">
 		<div class="alignCenter pd3 lightBlue">
 			<h3>Highlights</h3>
-			<div class="flex-container center mrTp25 font20">
-				<div class="marginDiv"><a href="http//www.hutify.com">Hutify.com</div>
+			<div class="flex-container center mrTp25 font20 flex-wrap">
+				<div class="highlight-module-content">
+					<div class="height">
+						<div class="photo">
+							<div class="photoInside">
+								<div class="photoContent">
+									<img src="./images/goergiaInstitute.png" />
+								</div>
+							</div>
+						</div>
+						<div class="highlightTitle">
+							<span>User Experience Design</span>
+						</div>
+						<div class="courseDescription darkGrey left">
+							<h5><strong>Georgia Institute of Technology</strong></h5>
+							<p class="mrTp10">Successfully completed a 6 weeks course in Introdution to User Experience Design by Georgia Institute of 
+								Technology</p>
+						</div>
+					</div>
+				</div>
+				<div class="highlight-module-content">
+					<div class="height">
+						<div class="photo">
+								<div class="photoInside">
+									<div class="photoContent">
+										<img src="./images/deepLearning.png" />
+									</div>
+								</div>
+						</div>
+						<div class="highlightTitle">
+							<span>AI for Everyone</span>
+						</div>
+						<div class="courseDescription darkGrey left">
+							<h5><strong>DeepLearning.AI</strong></h5>
+								<p>AI For Everyone by DeepLearning.AI</p>
+						</div>
+					</div>
+				</div>
+				<div class="highlight-module-content">
+					<div class="height">
+						<div class="photo">
+								<div class="photoInside">
+									<div class="photoContent">
+										<img src="./images/MUN_logo.jpg" />
+									</div>
+								</div>
+						</div>
+						<div class="highlightTitle">
+							<span>Best Caricature Artist 2019</span>
+						</div>
+						<div class="courseDescription darkGrey left">
+							<h5><strong>The Palace MUN India</strong></h5>
+								<p>Best Caricature Artist</p>
+						</div>
+					</div>
+				</div>
+				<div class="highlight-module-content">
+					<div class="height">
+						<div class="photo">
+								<div class="photoInside">
+									<div class="photoContent">
+										<img src="./images/adobe.png" />
+									</div>
+								</div>
+						</div>
+						<div class="highlightTitle">
+							<span>Adobe Workshop</span>
+						</div>
+						<div class="courseDescription darkGrey left">
+							<h5><strong>Adobe Workshop</strong></h5>
+								<p>Adobe Workshop</p>
+						</div>
+					</div>
+				</div>
+				<div class="highlight-module-content">
+					<div class="height">
+						<div class="photo">
+								<div class="photoInside">
+									<div class="photoContent">
+										<img src="./images/MUN_logo.jpg" />
+									</div>
+								</div>
+						</div>
+						<div class="highlightTitle">
+							<span>Certificate of Excellence</span>
+						</div>
+						<div class="courseDescription darkGrey left">
+							<h5><strong>The MSBSS MUN India</strong></h5>
+								<p>Certificate of Excellence</p>
+						</div>
+					</div>
+				</div>
+				<div class="highlight-module-content">
+					<div class="height">
+						<div class="photo">
+								<div class="photoInside">
+									<div class="photoContent">
+										<img src="./images/adobe.png" />
+									</div>
+								</div>
+						</div>
+						<div class="highlightTitle">
+							<span>Adobe Workshop</span>
+						</div>
+						<div class="courseDescription darkGrey left">
+							<h5><strong>Adobe Workshop</strong></h5>
+								<p>Adobe Workshop</p>
+						</div>
+					</div>
+				</div>
+				<div class="highlight-module-content">
+					<div class="height">
+						<div class="photo">
+								<div class="photoInside">
+									<div class="photoContent">
+										<img src="./images/adobe.png" />
+									</div>
+								</div>
+						</div>
+						<div class="highlightTitle">
+							<span>Adobe Workshop</span>
+						</div>
+						<div class="courseDescription darkGrey left">
+							<h5><strong>Adobe Workshop</strong></h5>
+								<p>Adobe Workshop</p>
+						</div>
+					</div>
+				</div>
+				<div class="highlight-module-content">
+					<div class="height">
+						<div class="photo">
+								<div class="photoInside">
+									<div class="photoContent">
+										<img src="./images/adobe.png" />
+									</div>
+								</div>
+						</div>
+						<div class="highlightTitle">
+							<span>Adobe Workshop</span>
+						</div>
+						<div class="courseDescription darkGrey left">
+							<h5><strong>Adobe Workshop</strong></h5>
+								<p>Adobe Workshop</p>
+						</div>
+					</div>
+				</div>
+				<!--<div class="marginDiv"><a href="http//www.hutify.com">Hutify.com</a></div>
 				<div class="marginDiv"><a href="http://www.pavsngo.com/">PAVS</a></div>
-				<div class="marginDiv">Mask Making in Covid Pandemic</div>
+				<div class="marginDiv">Mask Making in Covid Pandemic</div>-->
 			</div>
 		</div>
 	</div><!--SectionDiv-->
