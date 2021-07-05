@@ -6,497 +6,44 @@
 
 <title></title>
 
-<style type="text/css">
-
-* {
-  box-sizing: border-box;
-}
-
-body,h1,p,h2,h3 {
-	margin:0px;
-    padding:0px;
-}
-
-body,h1, p {
-  font-family: Open Sans,Arial,sans-serif;
-  font-size: 1rem;
-}
-
-#wrapper {
-    width: 100%;
-    background-color: #fff;
-    height: auto !important;
-    min-height: 100%;
-}
-
-/* Container for flexboxes */
-.sectionDiv, .headerDiv {
-  width: 100%;
-  min-width: 1210px;
-  float:left;
-}
-
-.headerDiv {
-  background-color: #320e3b;
-  height:auto;
-}
-
-.fixedHeaderDiv {
- position:fixed;
- top:0px;
-}
-
-/* navigation bar */
-
-.navbar, .profile {
-	width: 1024px;
-	margin: 0 auto;
-}
-
-.alignCenter {
-	width: 1210px;
-	margin: 0 auto;
-}
-
-.navbar {
-	font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
-	padding-top:40px;
-}
-
-ul#nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #320e3b;
-  font-weight:bold;
-}
-
-ul#nav li {
-  float: left;
-  padding-right:22px;
-}
-
-ul#nav li a{
-  color: #9fd0cc;
-  text-align: center;
-  padding-bottom:40px;
-  text-decoration: none;
-  font-weight: bold;
-  font-style: normal;
-  text-transform: uppercase;
-  font-size:1.125rem;
-}
-
-ul#nav li a, .inlineBlock{
-  display: inline-block;
-}
-
-.dropbtn {
-  display: block;
-}
-
-.navItemHasChildren span {
-	padding-right:8px;
-}
-	
-.downArrow {
-	margin-bottom:3px;
-	border: solid #9fd0cc;
-	border-width: 0 3px 3px 0;
-	display: inline-block;
-	padding: 3px;
-	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-}
-	
-
-ul#nav li a:hover, .dropdown:hover .dropbtn {
-  color: #7fa6a3;
-}
-
-
-ul#nav li.dropdown {
-  display: block;
-      -webkit-transition: height 0.3s ease-in-out;
-    -o-transition: height 0.3s ease-in-out;
-    -moz-transition: height 0.3s ease-in-out;
-    transition: height 0.3s ease-in-out;
-
-}
-
-.dropdown-content {
-  display: none;
-  border-top:3px solid #c1413d;
-  padding:15px 20px;
-  position: absolute;
-  background-color: #320e3b;
-  width: 320px !important;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  padding: 6px 20px;
-  text-decoration: none;
-  text-align: left !important;
-  display: block !important;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Add Animation */
-.dropdown {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-.responsiveimg {
-  max-width: 100%;
-  height: auto;
-}
-
-.responsiveimg1 {
-  width: 380px;
-  height:280px;
-  max-width:100%;
-}
-
-.profileSection {
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-image: url("./images/blue-background-grainy-texture.png");
-  margin-top: 6rem;
-  display: -webkit-flex;
-  display: flex;
-  width:100%;
-}
-
-.profile .lt {
-	width:60%;
-	float:left;
-	}
-	
-.profile .lt p	{
-	font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
-	font-size: 1.5rem;
-	color: #ffffff !important;
-	line-height: 1.5em;
-	text-shadow: 0.08em 0.08em 0.08em rgba(0,0,0,0.4);
-	margin-top:20px;
-}
-	
-.profile .rt {
-	width:40%;
-	float:left;
-	margin:30px auto;
-}
-
-.white {
-	color:#fff;
-}
-	
-.brown {
-	color:#c1413d;
-}
-
-.darkGrey{
-	color: #4e4e4e;
-}
-	
-.lightBlue {
-	color:#005868;
-}
-	
-h1{
-	font-size:5.2rem;
-	margin-bottom:.8rem;
-	padding-top:120px;
-	font-weight:normal;
-}
-
-h2 {
-	font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: 3.5rem;
-	color: #ffffff !important;
-	text-shadow: 0.08em 0.08em 0.08em rgba(0,0,0,0.4);
-	margin-top:100px;
-}
-
-h3 {
-    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
-	font-weight: 700;
-	font-size: 2em;
-}
-
-.font20 {
-	font-size:1.2rem;
-}
-
-.font14 {
-	font-size:1rem;
-}
-
-.mrRt45 {
-	margin-right:45px;
-}
-
-.mrTp25 {
-	margin-top:25px;
-}
-
-.mrTp15 {
-	margin-top:15px;
-}
-
-.mrTp10 {
-	margin-top:10px;
-}
-
-.mrLt15 {
-	margin-left:15px;
-}
-
-.lineHeight {
-  line-height: 1.6;
-}
-	
-.brownBg {
-	background-color: #c1413d;
-}
-  
-.lightBlueBg {
-	background-color: #9fd0cc;	
-}
-
-.lightPinkBg {
-	background-color: #f2d8d7;	
-}
-
-.blueBg {
-	background-color: #005a87;	
-}
-
-.pd3{
-	padding:3%;
-}
-
-.bold {
-	font-weight:bold;
-	}
-
-.center {
-	text-align:center;
-}
-
-.left {
-	text-align:left;
-}
-
-.horizantalAlign {
-	margin:0 auto;
-}
-	
-.pointer {
-	cursor:pointer;
-	}
-	
-a {
-	text-decoration:none;
-	color:#fff;
-	font-weight:bold;
-  }
-  
-a:visited {
-	color:#fff;
-	}
-	
-a:hover {
-	color:#fffafa;
- }
-
-.flex-container {
-  display: flex;
-}
-	
-.marginDiv {
-  margin: 5% 10% 2% 0%;
-}
-
-.marginDiv1 {
-  margin: 1% 2% 2% 0%;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.flex-width {
-	width:48%;
-}
-
-/* The Modal Window */
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  top: 30%; /* Location of the box */
-  left: 20%;
-  width: 60%; /* Full width */
-  height: 50%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-image: url("./images/blue-background-grainy-texture.png");
-  opacity:1;
-}
-
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: left;
-  color: #fff;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.highlight-module-content {
-    margin: 15px 4% 20px 0px;
-	width:28%;
-}
-
-.highlight-module-content .height {
-    min-height: 10%;
-}
-
-.highlight-module-content .height .photo {
-    border: #d4d3d3 solid 1px;
-    padding: 15% 0;
-	height:200px;
-	width:100%;
-}
-
-.photoInside {
-    line-height: 0;
-    position: relative;
-}
-
-.photoContent {
-    display: inline-block;
-    line-height: 0;
-    position: relative;
-    max-width: 100%;
-}
-
-.photoContent img {
-    display: inline;
-    height: auto !important;
-    max-width: 100%;
-    width: auto !important;
-}
-
-.highlightTitle {
-    padding: 8px 0;
-    background: #252729;
-    font-size: 14px;
-    color: #fff;
-    font-weight: normal;
-    width: 80%;
-    margin: auto;
-    border-radius: 4px;
-    position: relative;
-    top: -19px;
-}
-
-.courseDescription {
-	line-height: 1.4;
-	text-rendering: optimizeLegibility;
-	}
-
-.courseDescription h5 {
-	margin:5px;
-	}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-
-</style>
-		
+<link rel="stylesheet" href="global.css">
 </head>
 
 <body>
+ <div id="wrapper">
+			<div class="headerDiv fixedHeaderDiv">
+				<div class="navbar">
+					<ul id="nav">
+					  <li><a href="#impact">Impact</a></li>
+					  <li><a href="#leadership">Leadership</a></li>
+					  <li><a href="#academics">Academics</a></li>
+					   <li class="dropdown navItemHasChildren">
+						<a href="javascript:void(0)" class="dropbtn"><span>Extra-Curricular</span><i class="downArrow"></i></a>
+						<div class="dropdown-content">
+						  <a href="#sports">Sports</a>
+						  <a href="#indianClassicalDance">Indian Classical Dance</a>
+						  <a href="#mun">MUN</a>
+						</div>
+					  </li>
+					  <li><a href="#exploration">Exploration</a></li>
+					  <li><a href="#programming">Programming</a></li>
+					   <li class="dropdown navItemHasChildren">
+						<a href="javascript:void(0)" class="dropbtn"><span>About</span><i class="downArrow"></i></a>
+						<div class="dropdown-content">
+						  <a href="#aboutme">About Me</a>
+						  <a href="#highlights">Highlights</a>
+						  <a href="#contactme">Contact Me</a>
+						</div>
+					  </li>
+					</ul>
+				</div>
+			</div><!--headerDiv-->
 
-<div id="wrapper">
-	<div class="headerDiv fixedHeaderDiv">
-		<div class="navbar">
-			<ul id="nav">
-			  <li><a href="#impact">Impact</a></li>
-			  <li><a href="#leadership">Leadership</a></li>
-			  <li><a href="#academics">Academics</a></li>
-			   <li class="dropdown navItemHasChildren">
-				<a href="javascript:void(0)" class="dropbtn"><span>Extra-Curricular</span><i class="downArrow"></i></a>
-				<div class="dropdown-content">
-				  <a href="#sports">Sports</a>
-				  <a href="#indianClassicalDance">Indian Classical Dance</a>
-				  <a href="#mun">MUN</a>
-				</div>
-			  </li>
-			  <li><a href="#exploration">Exploration</a></li>
-			  <li><a href="#programming">Programming</a></li>
-			   <li class="dropdown navItemHasChildren">
-				<a href="javascript:void(0)" class="dropbtn"><span>About</span><i class="downArrow"></i></a>
-				<div class="dropdown-content">
-				  <a href="#aboutme">About Me</a>
-				  <a href="#highlights">Highlights</a>
-				  <a href="#contactme">Contact Me</a>
-				</div>
-			  </li>
-			</ul>
-		</div>
-	</div><!--headerDiv-->
 	<div class="profileSection">
 		<div class="profile">
 			<div class="lt">
 				<h2>Deveshi Modi</h2>
-				<p class="font20">Programmer | Artist | Player | Social Worker | MUNer | Classical Dancer  </p>
+				<p class="font20">Co-Founder | Programmer | Artist | Player | Social Worker | MUNer | Classical Dancer  </p>
 			</div>
 			<div class="rt">
 				<img src="./images/deveshi.jpg" class="responsiveimg"/>
@@ -508,18 +55,80 @@ a:hover {
 	<div id="impact" class="sectionDiv brownBg" >
 			<div class="alignCenter pd3">
 				<h3 class="white">Impact</h3>
-				<div class="flex-container">
-					<div class="marginDiv">				
-						<div><a href="http://www.hutify.com" target="_blank"><img src="./images/hutify.jpg" class="responsiveimg1"/></a></div>
-						<div class="center mrTp25 font20"><a href="http://www.hutify.com" target="_blank">Hutify.com</a></div>
-					</div>
-					<div class="marginDiv">
-						<div><a href="http://www.pavsngo.com/" target="_blank"><img src="./images/pavs.jpg" class="responsiveimg1"/></a></div>
-						<div class="center mrTp25 font20">
-							<div class="inlineBlock"><a href="http://www.pavsngo.com/" target="_blank">PAVS</a></div>
-							<div class="inlineBlock"><a href="https://www.facebook.com/pavsngo/?ref=page_internal" target="blank"/>| Our Facebook Page</a></div>
+				<div class="flex-container center mrTp25 font20 flex-wrap">
+					<div class="highlight-module-content">
+						<div class="height">
+							<div class="photoInside">
+								<div class="photoContent">
+									<a href="http://www.hutify.com" target="_blank"><img src="./images/hutify1.jpg" /></a>
+								</div>
+							</div>
+							<div class="courseDescription darkGrey mrTp10">
+								<h5><strong><a href="http://www.hutify.com" target="_blank">Happiness Services Marketplace</a></strong></h5>
+							</div>
 						</div>
 					</div>
+					<div class="highlight-module-content">
+						<div class="height">
+							<div class="photoInside">
+								<div class="photoContent">
+									<a href="" target="_blank"><img src="./images/art.jpg" /></a>
+								</div>
+							</div>
+							<div class="courseDescription darkGrey mrTp10">
+								<h5><strong><a href="" target="_blank">Masking Up Campaign</a></strong></h5>
+							</div>
+						</div>
+					</div>
+					<div class="highlight-module-content">
+						<div class="height">
+							<div class="photoInside">
+								<div class="photoContent">
+									<a href="" target="_blank"><img src="./images/covid_warrior.png" /></a>
+								</div>
+							</div>
+							<div class="courseDescription darkGrey mrTp10">
+								<h5><strong><a href="" target="_blank">Fundraising to supply Oxygen Concentrator and medical supplies to hospitals</a></strong></h5>
+							</div>
+						</div>
+					</div>
+					<div class="highlight-module-content">
+						<div class="height">
+							<div class="photoInside">
+								<div class="photoContent">
+									<a href="" target="_blank"><img src="./images/pavs.jpg" /></a>
+								</div>
+							</div>
+							<div class="courseDescription darkGrey mrTp10">
+								<h5><strong><a href="" target="_blank">Social Worker</a></strong></h5>
+							</div>
+						</div>
+					</div>
+					<div class="highlight-module-content">
+						<div class="height">
+							<div class="photoInside">
+								<div class="photoContent">
+									<a href="https://www.facebook.com/e2efoundation/" target="_blank"><img src="./images/pavs.jpg" /></a>
+								</div>
+							</div>
+							<div class="courseDescription darkGrey mrTp10">
+								<h5><strong><a href="https://www.facebook.com/e2efoundation/" target="_blank">Educate2Empower</a></strong></h5>
+							</div>
+						</div>
+					</div>
+					<div class="highlight-module-content">
+						<div class="height">
+							<div class="photoInside">
+								<div class="photoContent">
+									<a href="" target="_blank"><img src="./images/socialWork3.jpg" /></a>
+								</div>
+							</div>
+							<div class="courseDescription darkGrey mrTp10">
+									<h5><strong><a href="" target="_blank">Environmentalist</a></strong></h5>
+							</div>
+						</div>
+					</div>
+	
 				</div>
 			</div>
 	</div><!--SectionDiv-->
@@ -538,22 +147,24 @@ a:hover {
 		<div class="alignCenter pd3 lightBlue">
 			<h3>Highlights</h3>
 			<div class="flex-container center mrTp25 font20 flex-wrap">
+			https://ixda.org <br>
+			https://www.interaction-design.org/
 				<div class="highlight-module-content">
 					<div class="height">
 						<div class="photo">
 							<div class="photoInside">
 								<div class="photoContent">
-									<img src="./images/goergiaInstitute.png" />
+									<img src="./images/google_UX_logo.jpg" />
 								</div>
 							</div>
 						</div>
 						<div class="highlightTitle">
-							<span>User Experience Design</span>
+							<span>Google UX Design Professional Certificate</span>
 						</div>
 						<div class="courseDescription darkGrey left">
-							<h5><strong>Georgia Institute of Technology</strong></h5>
-							<p class="mrTp10">Successfully completed a 6 weeks course in Introdution to User Experience Design by Georgia Institute of 
-								Technology</p>
+							<h5><strong>UX design professional certificate developed by Google</strong></h5>
+							<p class="mrTp10">Learn the foundations of UX design, including empathizing with users, building wireframes and prototypes, 
+							and conducting research to test your designs.</p>
 						</div>
 					</div>
 				</div>
@@ -572,6 +183,25 @@ a:hover {
 						<div class="courseDescription darkGrey left">
 							<h5><strong>DeepLearning.AI</strong></h5>
 								<p>AI For Everyone by DeepLearning.AI</p>
+						</div>
+					</div>
+				</div>
+				<div class="highlight-module-content">
+					<div class="height">
+						<div class="photo">
+							<div class="photoInside">
+								<div class="photoContent">
+									<img src="./images/goergiaInstitute.png" />
+								</div>
+							</div>
+						</div>
+						<div class="highlightTitle">
+							<span>User Experience Design</span>
+						</div>
+						<div class="courseDescription darkGrey left">
+							<h5><strong>Georgia Institute of Technology</strong></h5>
+							<p class="mrTp10">Successfully completed a 6 weeks course in Introdution to User Experience Design by Georgia Institute of 
+								Technology</p>
 						</div>
 					</div>
 				</div>
@@ -640,25 +270,34 @@ a:hover {
 			<h3>Academics</h3>
 			<div class="flex-container center mrTp25 font20 flex-wrap lineHeight">
 				<div class="lightBlueBg  flex-width pd3 marginDiv1 left">
-					Maharaja Sawai Bhavani Singh School, Jaipur
+					<p class="semiBold">Maharaja Sawai Bhavani Singh School, Jaipur</p>
 					<ul class="font14">
 						<li class="mrTp15">Grade 11 Final Examination:
 							<ul>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
+								<li>92.3% Aggregate Marks</li>
+								<li>Highest Marks in Mathematics and Computer Science</li>
+								<li>Second Highest Marks in Physics and Chemistry</li>
 							</ul>
 						</li>
 
 						<li class="mrTp15">Grade 10 CBSE Board Result: CGPA 10</li>
 						
-						<li class="mrTp15">Presently taking Physics, Chemistry, Math, Painting, Computer and English</li>
+						<li class="mrTp15">Presently taking Computer Science, Mathematics, Painting, Physics, Chemistry, and English</li>
 					</ul>
 				</div>
-				<div class="lightBlueBg  flex-width pd3 marginDiv1 left">TBD</div>
+				
 				<div class="lightBlueBg  flex-width pd3 marginDiv1 left">
-					Standardized Tests
+					<p class="semiBold">Professional certificate developed by Google, UX design </p>
+					<p class="mrTp10">Learn the foundations of UX design, including empathizing with users, building wireframes and prototypes, and conducting research to test your designs.</p>
+					<p class="semiBold mrTp25">DeepLearning.AI (Artificial Intelligence)</p>
+					<p class="mrTp10">AI For Everyone by DeepLearning.AI</p>
+					<p class="semiBold mrTp25">Georgia Institute of Technology</p>
+					<p class="mrTp10">Successfully completed a 6 weeks course in Introdution to User Experience Design by Georgia Institute of Technology</p>
+				
+				</div>
+				
+				<div class="lightBlueBg  flex-width pd3 marginDiv1 left">
+					<p class="semiBold">Standardized Tests </p>
 					<ul>
 						<li>
 							<br >
@@ -680,7 +319,21 @@ a:hover {
 				
 				</div>	
 				<div class="lightBlueBg flex-width pd3 marginDiv1 left">
-					Academic Awards and Achievements
+					<p class="semiBold">Academic Awards and Achievements</p>
+					<ul>
+						<li>
+							1st position in Inter House Book Review competition (Book Name: The Diary of a young girl - Anne Frank)
+						</li>
+						<li>
+							"Wolrd Heritage Day" 1st position in Soft Board Decoration 
+						</li>
+						<li>
+							Certificate of Accomplishment for successful completion of Wolf Dog Workshop - Story Writing and Storytelling
+						</li>
+						<li>
+							'The Long Island President' essay contest winner.
+						</li>
+					</ul>
  				
 					
 					<div id="ReadMore" class="pointer">Read More </div>
@@ -689,6 +342,41 @@ a:hover {
 					<div id="myModal" class="modal">
 					  <span class="close">&times;</span>
 					  <div id="caption">
+							<ul>
+								<li>
+									1st position in Inter House Book Review competition (Book Name: The Diary of a young girl - Anne Frank)
+								</li>
+								<li>
+									"Wolrd Heritage Day" 1st position in Soft Board Decoration 
+								</li>
+								<li>
+									Certificate of Accomplishment for successful completion of Wolf Dog Workshop - Story Writing and Storytelling
+								</li>
+								<li>
+									'The Long Island President' essay contest winner.
+								</li>
+								<li>
+									Proverb Enactment, 2nd position
+								</li>
+								<li>
+									Secured 2nd position in Inter House "Poster Making Competition"
+								</li>
+								<li>
+									Secured 2nd position in the 6th PWS Aravali Invitational Inter-School Tennis Tournament
+								</li>
+								<li>
+									Secured 2nd position in Bird House Painting
+								</li>
+								<li>
+									Appreciation Certificate in Inter School Debate Competition
+								</li>
+								<li>
+									Acknowledgement for Community service and socially productive work.						
+								</li>
+								<li>
+									Secured 3rd position in Inter School Pin Board Competition
+								</li>
+							</ul>
 						
 					  </div>
 					</div>				
@@ -699,15 +387,43 @@ a:hover {
 	<div class="sectionDiv brownBg" id="leadership">
 		<div class="alignCenter pd3">
 			<h3 class="white">Leadership</h3>
-			<div class="flex-container">
-				<div class="marginDiv">				
-					<div><a href="http://www.hutify.com" target="_blank"><img src="./images/hutify.jpg" class="responsiveimg1"/></a></div>
-					<div class="center mrTp25 font20"><a href="http://www.hutify.com" target="_blank">Hutify.com</a></div>
+			<div class="flex-container center mrTp25 font20 flex-wrap">
+				<div class="highlight-module-content">
+					<div class="height">
+						<div class="photoInside">
+							<div class="photoContent">
+								<a href=""><img src="./images/School_pathway_trophy.jpeg" /></a>
+							</div>
+						</div>
+						<div class="courseDescription darkGrey mrTp10">
+							<h5><strong><a href="">Represented school as a captain for interstate tennis competition, Pathway School</a></strong></h5>
+						</div>
+					</div>
 				</div>
-				<div class="marginDiv">
-					<div><a href="http://www.pavsngo.com/" target="_blank"><img src="./images/pavs.jpg" class="responsiveimg1"/></a></div>
-					<div class="center mrTp25 font20"><a href="http://www.pavsngo.com/" target="_blank">PAVS</a></div>
+				<div class="highlight-module-content">
+					<div class="height">
+						<div class="photoInside">
+							<div class="photoContent">
+								<a href="http://www.pavsngo.com/" target="_blank"><img src="./images/pavs_ngo.png" /></a>
+							</div>
+						</div>
+						<div class="courseDescription darkGrey mrTp10">
+							<h5><strong><a href="http://www.pavsngo.com/" target="_blank">Executive member of a NGO</a></strong></h5>
+						</div>
+					</div>
 				</div>
+				<div class="highlight-module-content">
+					<div class="height">
+						<div class="photoInside">
+							<div class="photoContent">
+								<a href="http://www.hutify.com" target="_blank"><img src="./images/hutify1.jpg" /></a>
+							</div>
+						</div>
+						<div class="courseDescription darkGrey mrTp10">
+							<h5><strong><a href="http://www.hutify.com" target="_blank">Co-Founder - Personal wellbeing marketplace</a></strong></h5>
+						</div>
+					</div>
+				</div>				
 			</div>
 		</div>
 	</div><!--SectionDiv-->
@@ -717,15 +433,9 @@ a:hover {
 			<p class="mrTp25">Math enhances logic, arts enhance creativity and oration enhances personality. MUNning, enhances all.  It builds
 			confidence and the ability to face the toughest challenges at any stage of life.
 			My MUNIing experience as a particopant for the past 4 years has been an 
-			enriching learning experience.</p>
-			<div>
-				<div class="mrTp25"><!--<a href="./html/munExperiences.html">-->MUN Experiences</div>
-				<div>MUN Achivements</div>
-				<div>MUN Research</div>
-			</div>
-			<div><!--<a href="./html/tennis.html">-->Mun
+			enriching learning experience. I received various caricature artist awards.</p>
+			<div class="mrTp15"><!--<a href="./html/tennis.html">-->
 				<div><img src="./images/mun.jpg" class="responsiveimg" /></div>
-				<div><img src="./images/mun1.jpg" class="responsiveimg" /></div>
 			</div>			
 		</div>
 	</div><!--headerDiv-->
@@ -733,24 +443,32 @@ a:hover {
 		<div class="alignCenter pd3 white">
 			<h3>Indian Classical Dance</h3>
 			<p class="mrTp25">Kathak is one of the seven major forms of Indian classical dance. 
-			Deveshi learnt kathak dance from age of 6.
-			She learnt Kathak in New York from renowed kathak Guru Shri S.N.Charka. 
-			She also learnt kathak from Bhatkhande Sangit Vidyapith, Lucknow. She also performed Kathak at various stage shows.</p>
+			I learnt kathak dance from age of 6.
+			I learnt Kathak in New York from renowed kathak Guru Shri S.N.Charka. 
+			I also learnt kathak from Bhatkhande Sangit Vidyapith, Lucknow. I also performed Kathak at various stage shows.</p>
 			<div class="mrTp25"><img src="./images/DeveshiKathak.jpg" class="responsiveimg" /></div>
 		</div>
 	</div><!--SectionDiv-->
 	<div class="sectionDiv blueBg" id="sports">
 		<div class="alignCenter pd3 white">
 			<h3>Sports</h3>
-			<p class="mrTp25">Deveshi is very good in sports. She is a very good tennis player, she is in her school tennis team and won many prizes. 
-			She is black belt in Karate and Brown Belt in Taekwondo. She learnt taekwondo from 'Master Jeon' an Olympian. She is also 
-			a good swimmer, a skatter, a volleyball player and a Athelete. She participated in many interschool competition related to
+			<p class="mrTp25">I am a sports person. I am team captain in school and represented school tennis team and won many prizes. 
+			Besides that I a black belt in Karate and Brown Belt in Taekwondo. I learnt taekwondo from 'Master Jeon' an Olympian. I am also 
+			a good swimmer, a skatter, a volleyball player and a Athelete. I participated in many interschool competition related to
 			these sports.</p>
 			<div class="mrTp25">
 				<div><a href="./html/tennis.html">Tennis</a>
-					<div class="mrTp25"><img src="./images/tennis.jpg" class="responsiveimg" /></div>
-					<div class="mrTp25"><img src="./images/tennis1.jpg" class="responsiveimg" /></div>
-					<div class="mrTp25"><img src="./images/tennis3.jpg" class="responsiveimg" /></div>
+					<div class="flex-container flex-wrap">
+						<div class="flexColumn">
+							<img src="./images/tennis.jpg" class="responsiveimg"/>
+						</div>
+						<div class="flexColumn">
+							<img src="./images/tennis1.jpg" class="responsiveimg"/>
+						</div>
+						<div class="flexColumn">
+							<img src="./images/tennis3.jpg" class="responsiveimg"/>
+						</div>
+					</div>
 				</div>
 				<div class="mrTp25"><a href="./html/karate.html">Karate</a>
 					<div class="mrTp25"><img src="./images/deveshiblackbelt.jpg" class="responsiveimg" /></div>
@@ -815,11 +533,11 @@ a:hover {
 			<p>Life so far…<br >
 
               I am a Grade 12 student pursuing Science at Maharaja Sawai Bhawani Singh School, Jaipur (India). 
-              I am an Social Worker, programmer, MUNer, Artist and Sports Person. I draw my 
+              I am an Social Worker, Programmer, MUNer, Artist and Sports Person. I draw my 
 			  strength from my belief in me, my family and my friends.<br >
 
-			  Academically, I have been a CGPA 10 student with avid interest in all facets of science.
-			  I am equally passionate about Design and programming.
+			  Academically, I have been a CGPA 10 student with avid interest in all facets of Science.
+			  I am equally passionate about Design and Programming.
 
 
 			  I enjoy reading and I feel that the knowledge and perspective that my reading gives me has strengthened
@@ -861,4 +579,4 @@ span.onclick = function() {
 }
 </script>
 </body>
-</html>
+</html>>
