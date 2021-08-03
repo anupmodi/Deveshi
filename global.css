@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
   color: #3b3c36;
+  font-family:"Roboto", sans-serif;
+}
+
+body {
+	line-height :1.4;
 }
 
 body,h1,p,h2,h3 {
@@ -9,7 +14,6 @@ body,h1,p,h2,h3 {
 }
 
 body,h1, p {
-  font-family: Open Sans,Arial,sans-serif;
   font-size: 1rem;
 }
 
@@ -392,6 +396,40 @@ a:hover {
     min-height: 10%;
 }
 
+.flexColumn .height1 {
+    min-height: 21rem;
+	margin-right:10px;
+	margin-bottom:35px;
+}
+
+.flexColumn .height .slideUp {
+	-moz-animation: slideUp 1s ease-out;
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+	opacity:1;
+}
+
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		transform: translateY(10%);
+		-webkit-transform: translateY(10%);
+		-moz-transform: translateY(10%);
+}
+  100% {
+		opacity: 1;
+		transform: translateY(0%);
+		-webkit-transform: translateY(0%);
+		-moz-transform: translateY(0%);
+	}
+}
+
 .flexColumn .height .photo {
 	border: #d4d3d3 solid 1px;
     padding: 15% 0% 0% 0%;
@@ -399,12 +437,18 @@ a:hover {
 	width:100%;
 }
 
+.flexColumn .height1 .photo {
+	border: #d4d3d3 solid 1px;
+    padding: 15% 0%;
+}
+
+
 .photoInside {
     line-height: 0;
     position: relative;
 }
 
-.photoContent {
+.photoContent, .photoContent1 {
     display: inline-block;
     line-height: 0;
     position: relative;
@@ -418,7 +462,15 @@ a:hover {
     width: auto !important;
 }
 
-.photoContent img:hover {
+.photoContent1 img {
+    display: inline;
+    height: 125px !important;
+    max-width: 95%;
+    width: auto !important;
+}
+
+
+.photoContent img:hover, .photoContent1 img:hover {
     opacity:.9;
 }
 
@@ -426,13 +478,16 @@ a:hover {
     padding: 8px 0;
     background: #252729;
     font-size: 14px;
-    color: #fff;
     font-weight: normal;
     width: 80%;
     margin: auto;
     border-radius: 4px;
     position: relative;
     top: -19px;
+}
+
+.highlightTitle span {
+    color: #fff !important;
 }
 
 .courseDescription {
