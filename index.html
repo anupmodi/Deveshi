@@ -12,33 +12,37 @@
 
 <body>
  <div id="wrapper">
-			<div class="headerDiv">
-				<div class="navbar">
-					<ul id="nav">
-					  <li><a href="#impact">Impact</a></li>
-					  <li><a href="#leadership">Leadership</a></li>
-					  <li><a href="#academics">Academics</a></li>
-					   <li class="dropdown navItemHasChildren">
-						<a href="javascript:void(0)" class="dropbtn"><span>Extra-Curricular</span><i class="downArrow"></i></a>
-						<div class="dropdown-content">
-						  <a href="#sports">Sports</a>
-						  <a href="#indianClassicalDance">Indian Classical Dance</a>
-						  <a href="#mun">MUN</a>
-						</div>
-					  </li>
-					  <li><a href="#exploration">Exploration</a></li>
-					  <li><a href="#programming">Programming</a></li>
-					   <li class="dropdown navItemHasChildren">
-						<a href="javascript:void(0)" class="dropbtn"><span>About</span><i class="downArrow"></i></a>
-						<div class="dropdown-content">
-						  <a href="#aboutme">About Me</a>
-						  <a href="#highlights">Highlights</a>
-						  <a href="#contactme">Contact Me</a>
-						</div>
-					  </li>
-					</ul>
-				</div>
-			</div><!--headerDiv-->
+	<div class="headerDiv1">
+			<div class="topnav center" id="myTopnav">
+				  <a href="#home" class="active">Home</a>
+				  <a href="#impact">Impact</a>
+				  <a href="#leadership">Leadership</a>
+				  <a href="#academics">Academics</a>
+				  <div class="dropdown">
+					<button class="dropbtn">Extra-Curricular
+					  <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+					  <a href="#sports">Sports</a>
+					  <a href="#indianClassicalDance">Indian Classical Dance</a>
+					  <a href="#mun">MUN</a>
+					</div>
+				  </div> 
+				  <a href="#leadership">Exploration</a>
+				  <a href="#academics">Programming</a>
+				  <div class="dropdown">
+					<button class="dropbtn">About
+					  <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+					  <a href="#aboutme">About Me</a>
+					  <a href="#highlights">Highlights</a>
+					  <a href="#contactme">Contact Me</a>
+					</div>
+				  </div> 
+				  <a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
+	</div>
 
 	<div class="profileSection">
 		<div class="profile">
@@ -53,10 +57,10 @@
 	</div>
 	
 
-	<div id="impact" class="sectionDiv bgColorLightGreen" >
+	<div id="impact" class="sectionDiv bgColorSageGreen" >
 			<div class="alignCenter pd3">
 				<h3>Impact</h3>
-				<div class="flex-container center mrTp25 font20 ">
+				<div class="flex-container center mrTp15 font20 ">
 					<div class="flexColumn">
 						<div class="height">
 							<div class="slideUp">
@@ -149,7 +153,7 @@
 	<div class="sectionDiv">
 		<div class="alignCenter pd3 brown">			
 			<h3>Research and lab work</h3>
-			<div class="flex-container center mrTp25 font20">
+			<div class="flex-container center mrTp15 font20">
 				<div class="flexColumn">TBD</div>
 				<div class="flexColumn">TBD</div>
 				<div class="flexColumn">TBD</div>			
@@ -159,7 +163,7 @@
 	<div class="sectionDiv" id="highlights">
 		<div class="alignCenter pd3 lightBlue">
 			<h3>Highlights</h3>
-			<div class="flex-container center mrTp25 font20 ">
+			<div class="flex-container center mrTp15 font20 ">
 				<div class="flexColumn">
 					<div class="height1">
 						<div class="photo">
@@ -211,7 +215,7 @@
 						</div>
 						<div class="courseDescription darkGrey center">
 							<h5><strong>Georgia Institute of Technology</strong></h5>
-							<p class="mrTp10">Successfully completed a 6 weeks course in Introdution to User Experience Design by Georgia Institute of 
+							<p class="mrTp10">Successfully completed a 6 weeks course in Introduction to User Experience Design by Georgia Institute of 
 								Technology</p>
 						</div>
 					</div>
@@ -279,14 +283,14 @@
 	<div class="sectionDiv" id="academics">
 		<div class="alignCenter pd3 lightBlue border1Px">
 			<h3>Academics</h3>
-			<div class="flex-container center mrTp25 font20  lineHeight">
+			<div class="flex-container center font20  lineHeight">
 				<div class="lightBlueBg  flex-width pd3 marginDiv left">
 					<p class="semiBold">Maharaja Sawai Bhavani Singh School, Jaipur</p>
 					<ul class="font14">
 						<li class="mrTp15">Grade 11 Final Examination:
 							<ul>
 								<li>92.3% Aggregate Marks</li>
-								<li>Highest Marks in Mathematics and Computer Science</li>
+								<li>Highest Marks in Computer Science</li>
 								<li>Second Highest Marks in Physics and Chemistry</li>
 							</ul>
 						</li>
@@ -300,9 +304,9 @@
 				<div class="lightBlueBg  flex-width pd3 marginDiv left">
 					<p class="semiBold">Professional certificate developed by Google, UX design </p>
 					<p class="mrTp10">Learn the foundations of UX design, including empathizing with users, building wireframes and prototypes, and conducting research to test your designs.</p>
-					<p class="semiBold mrTp25">DeepLearning.AI (Artificial Intelligence)</p>
+					<p class="semiBold mrTp15">DeepLearning.AI (Artificial Intelligence)</p>
 					<p class="mrTp10">AI For Everyone by DeepLearning.AI</p>
-					<p class="semiBold mrTp25">Georgia Institute of Technology</p>
+					<p class="semiBold mrTp15">Georgia Institute of Technology</p>
 					<p class="mrTp10">Successfully completed a 6 weeks course in Introdution to User Experience Design by Georgia Institute of Technology</p>
 				
 				</div>
@@ -311,20 +315,15 @@
 					<p class="semiBold">Standardized Tests </p>
 					<ul>
 						<li>
-							<br >
+							ACT: 34/36
 						</li>
 						<li>
-							<br >
-							<br >
-							<br >
-							<br >
+							TOEFL: 111/120
 						</li>
 						<li>
-							<br >
-							<br >
-							<br >
-							<br >
-							<br >
+							AP's
+							Psychology - 5
+							Computer Science - 4
 						</li>
 					</ul>
 				
@@ -358,7 +357,7 @@
 									1st position in Inter House Book Review competition (Book Name: The Diary of a young girl - Anne Frank)
 								</li>
 								<li>
-									"Wolrd Heritage Day" 1st position in Soft Board Decoration 
+									"World Heritage Day" 1st position in Soft Board Decoration 
 								</li>
 								<li>
 									Certificate of Accomplishment for successful completion of Wolf Dog Workshop - Story Writing and Storytelling
@@ -398,7 +397,7 @@
 	<div class="sectionDiv" id="leadership">
 		<div class="alignCenter pd3">
 			<h3>Leadership</h3>
-			<div class="flex-container center mrTp25 font20 ">
+			<div class="flex-container center mrTp15 font20 ">
 				<div class="flexColumn">
 					<div class="height">
 						<div class="photoInside">
@@ -441,14 +440,14 @@
 	<div class="sectionDiv lightPinkBg" id="mun">
 		<div class="alignCenter pd3 lightBlue">
 			<h3>Model United Nations (MUN)</h3>
-			<p class="mrTp25">Math enhances logic, arts enhance creativity and oration enhances personality. MUNning, enhances all.  It builds
+			<p class="mrTp15">Math enhances logic, arts enhance creativity and oration enhances personality. MUNning, enhances all.  It builds
 			confidence and the ability to face the toughest challenges at any stage of life.
 			My MUNning experience as a participant for the past 4 years has been an 
 			enriching learning experience. I received various caricature artist awards.</p>
-			<div class="courseDescription darkGrey mrTp25">
+			<div class="courseDescription darkGrey mrTp15">
 				<strong>Best Caricature Artist</strong>
 			</div>
-			<div class="flex-container center mrTp25 font20">
+			<div class="flex-container center mrTp15 font20">
 						<div class="flexColumn">
 							<div class="height">
 								<div class="photoInside">
@@ -483,14 +482,14 @@
 	<div class="sectionDiv" id="sports">
 		<div class="alignCenter pd3">
 			<h3>Sports</h3>
-			<p class="mrTp25">I am a sports person. I am team captain in school and represented school tennis team and won many prizes. 
+			<p class="mrTp15">I am a sports person. I am team captain in school and represented school tennis team and won many prizes. 
 			Besides that I a black belt in Karate and Brown Belt in Taekwondo. I learnt taekwondo from 'Master Jeon' an Olympian. I am also 
 			a good swimmer, a skatter, a volleyball player and a Athelete. I participated in many interschool competition related to
 			these sports.</p>
-			<div class="courseDescription darkGrey mrTp25">
+			<div class="courseDescription darkGrey mrTp15">
 				<strong>Tennis</strong>
 			</div>
-				<div class="flex-container center mrTp25 font20">
+				<div class="flex-container center mrTp15 font20">
 						<div class="flexColumn">
 							<div class="height">
 								<div class="photoInside">
@@ -519,10 +518,10 @@
 							</div>
 						</div>
 				</div>
-				<div class="courseDescription darkGrey mrTp25">
+				<div class="courseDescription darkGrey mrTp15">
 				<strong>Karate & Taekwondo</strong>
 			</div>
-				<div class="flex-container center mrTp25 font20">
+				<div class="flex-container center mrTp15 font20">
 						<div class="flexColumn">
 							<div class="height">
 								<div class="photoInside">
@@ -546,7 +545,7 @@
 			<div class="sectionDiv" id="indianClassicalDance">
 		<div class="alignCenter pd3">
 			<h3>Indian Classical Dance</h3>
-			<p class="mrTp25">Kathak is one of the seven major forms of Indian classical dance. 
+			<p class="mrTp15">Kathak is one of the seven major forms of Indian classical dance. 
 			I learnt kathak dance from age of 6.
 			I learnt Kathak in New York from renowed kathak Guru Shri S.N.Charka. 
 			I also learnt kathak from Bhatkhande Sangit Vidyapith, Lucknow. I also performed Kathak at various stage shows.</p>
@@ -556,7 +555,7 @@
 	<div class="sectionDiv">
 		<div class="alignCenter pd3">
 			<h3>Social Worker</h3>
-			<p class="mrTp25">Deveshi is a dedicated social worker. She is associated with a NGO name 
+			<p class="mrTp15">Deveshi is a dedicated social worker. She is associated with a NGO name 
 			<a href="http://www.pavsngo.com/">People Aspiring for Vibrant Smiles (PAVS)</a> since age 10.</p><br>
 			<p>Pavs Facebook page is <a href="https://www.facebook.com/pavsngo/">https://www.facebook.com/pavsngo/</a>
 			PAVS has conducted activities independently and in collaboration, focusing on empowerment  and meeting survival
@@ -568,7 +567,7 @@
 			old railway station, she helped in raising funds by selling Diwali cards with paiting on it.</p><br>
 
 			<p>Deveshi is also a nature lover she planted lots and lots of trees in her neighbourhood</p>
-			<div class="mrTp25"><span class="bold font20">Beautification of Railway Station</span>
+			<div class="mrTp15"><span class="bold font20">Beautification of Railway Station</span>
 				<div class="flex-container">
 						<div class="flexColumn">
 							<img src="./images/socialWork1.jpg"/>
@@ -578,7 +577,7 @@
 						</div>
 				</div>
 			</div>
-			<div class="mrTp25"><span class="bold font20">Planting trees to save mother Earth</span>
+			<div class="mrTp15"><span class="bold font20">Planting trees to save mother Earth</span>
 				<div class="flex-container">
 					<div class="flexColumn">
 						<img src="./images/socialWork3.jpg"  />
@@ -590,20 +589,20 @@
 	<div class="sectionDiv">
 		<div class="alignCenter pd3 lightBlue">
 			<h3>Art and Creativity</h3>
-			<p class="mrTp25">Deveshi is a born artis. She love art and design. She participated in many interschool competition related to
+			<p class="mrTp15">Deveshi is a born artis. She love art and design. She participated in many interschool competition related to
 			these Art. She is a creative head in her school.</p>
 			
-			<div class="mrTp25"><span class="bold font20">Masking Up</span>
+			<div class="mrTp15"><span class="bold font20">Masking Up</span>
 				<div class="flex-container">
-					<div class="mrTp25 flexColumn"><img src="./images/art.jpg" /></div>
+					<div class="mrTp15 flexColumn"><img src="./images/art.jpg" /></div>
 				</div>
 			</div>
-			<div class="mrTp25"><span class="bold font20">Inter School Art Competition</span>
+			<div class="mrTp15"><span class="bold font20">Inter School Art Competition</span>
 				<div class="flex-container">
-					<div class="mrTp25 flexColumn"><img src="./images/art1.jpg" /></div>
+					<div class="mrTp15 flexColumn"><img src="./images/art1.jpg" /></div>
 				</div>
 			</div>
-			<div class="mrTp25"><span class="bold font20">Deveshi Art Gallery</span>
+			<div class="mrTp15"><span class="bold font20">Deveshi Art Gallery</span>
 				<div class="flex-container">
 				</div>
 			</div>			
@@ -630,9 +629,9 @@
 
 		</div>
 	</div><!--SectionDiv-->
-	<div class="headerDiv" id="contactme">
-		<div class="alignCenter pd3">
-			<h3>Contact Me</h3>
+	<div class="headerDiv1" id="contactme">
+		<div class="alignCenter pd3 white1">
+			<h3 class="white1">Contact Me</h3>
 			Email: 	deveshi.modi@gmail.com</p>							
 		</div>
 	</div><!--headerDiv-->
@@ -658,6 +657,16 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
   modal.style.display = "none";
+}
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 </script>
 </body>
