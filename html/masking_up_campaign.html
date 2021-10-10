@@ -12,39 +12,56 @@
 
 <body>
  <div id="wrapper">
-			<div class="headerDiv">
-				<div class="navbar">
-					<ul id="nav">
-					  <li><a href="#impact">Impact</a></li>
-					  <li><a href="#leadership">Leadership</a></li>
-					  <li><a href="#academics">Academics</a></li>
-					   <li class="dropdown navItemHasChildren">
-						<a href="javascript:void(0)" class="dropbtn"><span>Extra-Curricular</span><i class="downArrow"></i></a>
+			<div class="headerDiv1">
+				<div class="topnav center" id="myTopnav">
+					  <a href="../index.html" class="active">Home</a>
+					  <a href="../index.html#impact">Impact</a>
+					  <a href="../index.html#leadership">Leadership</a>
+					  <a href="../index.html#academics">Academics</a>
+					  <div class="dropdown">
+						<button class="dropbtn">Extra-Curricular
+						  <i class="downArrow"></i>
+						</button>
 						<div class="dropdown-content">
-						  <a href="#sports">Sports</a>
-						  <a href="#indianClassicalDance">Indian Classical Dance</a>
-						  <a href="#mun">MUN</a>
+						  <a href="../index.html#sports">Sports</a>
+						  <a href="../index.html#indianClassicalDance">Indian Classical Dance</a>
+						  <a href="../index.html#mun">MUN</a>
 						</div>
-					  </li>
-					  <li><a href="#exploration">Exploration</a></li>
-					  <li><a href="#programming">Programming</a></li>
-					   <li class="dropdown navItemHasChildren">
-						<a href="javascript:void(0)" class="dropbtn"><span>About</span><i class="downArrow"></i></a>
+					  </div> 
+					  <a href="../index.html#leadership">Exploration</a>
+					  <a href="../index.html#academics">Programming</a>
+					  <div class="dropdown">
+						<button class="dropbtn">About
+						  <i class="downArrow"></i>
+						</button>
 						<div class="dropdown-content">
-						  <a href="#aboutme">About Me</a>
-						  <a href="#highlights">Highlights</a>
-						  <a href="#contactme">Contact Me</a>
+						  <a href="../index.html#aboutme">About Me</a>
+						  <a href="../index.html#highlights">Highlights</a>
+						  <a href="../index.html#contactme">Contact Me</a>
 						</div>
-					  </li>
-					</ul>
+					  </div> 
+					  <a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="myFunction()">&#9776;</a>
 				</div>
-			</div><!--headerDiv-->
+			</div><!--headerDiv1-->
+			<a href="https://www.facebook.com/e2efoundation/" target="_blank" class="underline">Educate2Empower</a>
 			
 			</div><!--SectionDiv-->
-			<div class="headerDiv" id="contactme">
-				<div class="alignCenter pd3">
-					<h3>Contact Me</h3>
+			<div class="headerDiv1" id="contactme">
+				<div class="alignCenter pd3 white1">
+					<h3 class="white1">Contact Me</h3>
 					Email: 	deveshi.modi@gmail.com</p>							
 				</div>
-			</div><!--headerDiv-->
+		   </div><!--headerDiv1-->
 </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
