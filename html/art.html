@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en-GB"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title></title>
+
+<link rel="stylesheet" href="../global.css">
+
+</head>
+
+<body>
+ <div id="wrapper">
+			<div class="headerDiv1">
+				<div class="topnav alignCenter" id="myTopnav">
+					  <a href="../index.html" class="active">Home</a>
+					  <a href="../index.html#impact">Impact</a>
+					  <a href="../index.html#leadership">Leadership</a>
+					  <a href="../index.html#academics">Academics</a>
+					  <div class="dropdown">
+						<button class="dropbtn">Extra-Curricular
+						  <i class="downArrow"></i>
+						</button>
+						<div class="dropdown-content">
+						  <a href="../index.html#sports">Sports</a>
+						  <a href="../index.html#indianClassicalDance">Indian Classical Dance</a>
+						  <a href="../index.html#mun">MUN</a>
+						</div>
+					  </div> 
+					  <a href="../index.html#leadership">Exploration</a>
+					  <a href="../index.html#academics">Programming</a>
+					  <div class="dropdown">
+						<button class="dropbtn">About
+						  <i class="downArrow"></i>
+						</button>
+						<div class="dropdown-content">
+						  <a href="../index.html#aboutme">About Me</a>
+						  <a href="../index.html#highlights">Highlights</a>
+						  <a href="../index.html#contactme">Contact Me</a>
+						</div>
+					  </div> 
+					  <a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="myFunction()">&#9776;</a>
+				</div>
+			</div><!--headerDiv1-->
+			<div class="row">
+				  <div class="column">
+					<img src="1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+				  </div>
+				  <div class="column">
+					<img src="1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+				  </div>
+				  <div class="column">
+					<img src="3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+				  </div>
+				  <div class="column">
+					<img src="4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+				  </div>
+			</div>
+
+			<div id="myModal" class="modal">
+			  <span class="close cursor" onclick="closeModal()">&times;</span>
+			  <div class="modal-content">
+
+				<div class="mySlides">
+				  <div class="numbertext">1 / 4</div>
+				  <img src="img_nature_wide.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+				  <div class="numbertext">2 / 4</div>
+				  <img src="img_snow_wide.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+				  <div class="numbertext">3 / 4</div>
+				  <img src="img_mountains_wide.jpg" style="width:100%">
+				</div>
+				
+				<div class="mySlides">
+				  <div class="numbertext">4 / 4</div>
+				  <img src="img_lights_wide.jpg" style="width:100%">
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+				  <p id="caption"></p>
+				</div>
+
+
+				<div class="column">
+				  <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+				</div>
+			  </div>
+						
+			</div><!--SectionDiv-->
+			<div class="headerDiv1" id="contactme">
+				<div class="alignCenter pd3 white1">
+					<h3 class="white1">Contact Me</h3>
+					Email: 	deveshi.modi@gmail.com</p>							
+				</div>
+		   </div><!--headerDiv1-->
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
