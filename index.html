@@ -4,7 +4,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title></title>
+<title>Deveshi Modi</title>
 
 <link rel="stylesheet" href="global.css">
 
@@ -13,7 +13,7 @@
 <body>
  <div id="wrapper">
 	<div class="headerDiv1">
-			<div class="topnav center" id="myTopnav">
+			<div class="topnav alignCenter" id="myTopnav">
 				  <a href="#home" class="active">Home</a>
 				  <a href="#impact">Impact</a>
 				  <a href="#leadership">Leadership</a>
@@ -45,8 +45,8 @@
 	</div><!--headerDiv1-->
 			
 
-	<div class="profileSection">
-		<div class="profile">
+	<div class="profileSection headerDiv1">
+		<div class="profile alignCenter">
 			<div class="lt">
 				<h2>Deveshi Modi</h2>
 				<p class="font20">Co-Founder | Programmer | Artist | Player | Social Worker | MUNer | Classical Dancer  </p>
@@ -557,7 +557,7 @@
 		<div class="alignCenter pd3">
 			<h3>Social Worker</h3>
 			<p class="mrTp15">Deveshi is a dedicated social worker. She is associated with a NGO name 
-			<a href="http://www.pavsngo.com/">People Aspiring for Vibrant Smiles (PAVS)</a> since age 10.</p><br>
+			<a href="http://www.pavsngo.com/" class="underline">People Aspiring for Vibrant Smiles (PAVS)</a>.</p><br>
 			<p>Pavs Facebook page is <a href="https://www.facebook.com/pavsngo/">https://www.facebook.com/pavsngo/</a>
 			PAVS has conducted activities independently and in collaboration, focusing on empowerment  and meeting survival
 			needs every month like food distribution, Tricycle Donation, Health Check Up Camps, blanket distribution, providing
@@ -635,8 +635,8 @@
 	<div class="sectionDiv">
 		<div class="alignCenter pd3 lightBlue">
 			<h3>Art and Creativity</h3>
-			<p class="mrTp15">Deveshi is a born artis. She love art and design. She participated in many interschool competition related to
-			these Art. She is a creative head in her school.</p>
+			<p class="mrTp15">Deveshi is a born artist. She love art and design. She participated in many interschool competition related to
+			these Art.</p>
 			
 			<div class="mrTp15"><span class="bold font20">Masking Up</span>
 				<div class="flex-container center mrTp15 font20">
@@ -686,23 +686,181 @@
 				<div class="flex-container center mrTp15 font20">
 						<div class="flexColumn">
 							<div class="height">
-								<div class="photoInside">
+								<div class="photoInside" onclick="openModal();currentSlide(1)">
 									<div class="photoContent">
-										<img src="./images/art1.jpg"/>
+										<img src="./images/artGallery/1.jpg"/>
 									</div>
 								</div>								
 							</div>
 						</div>
 						<div class="flexColumn">
 							<div class="height">
-								<div class="photoInside">
+								<div class="photoInside" onclick="openModal();currentSlide(2)">
 									<div class="photoContent">
-										<img src="./images/socialWork.jpg"/>
+										<img src="./images/artGallery/2.jpg"/>
 									</div>
 								</div>
 							</div>
 						</div>
-				</div>			
+						<div class="flexColumn">
+							<div class="height">
+								<div class="photoInside" onclick="openModal();currentSlide(3)">
+									<div class="photoContent">
+										<img src="./images/artGallery/3.jpg"/>
+									</div>
+								</div>
+							</div>
+							<a href="./html/art.html" class="underline floatRt">Explore Deveshi's Art</a>
+						</div>
+				</div>	
+				<div id="myModalArt" class="modalArt">
+					  <span class="closeArt cursorArt" onclick="closeModal()">&times;</span>
+					  <div class="modalContentArt">
+
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">1 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/1.jpg">
+						</div>
+
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">2 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/2.jpg">
+						</div>
+
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">3 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/3.jpg">
+						</div>
+    
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">4 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/4.jpg">
+						</div>
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">5 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/5.jpg">
+						</div>
+
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">6 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/6.jpg">
+						</div>
+
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">7 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/7.jpg">
+						</div>
+    
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">8 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/8.jpg">
+						</div>
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">9 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/9.jpg">
+						</div>
+
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">10 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/10.jpg">
+						</div>
+
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">11 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/11.jpg">
+						</div>
+    
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">12 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/12.jpg">
+						</div>
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">13 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/13.jpg">
+						</div>
+						
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">14 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/14.jpg">
+						</div>
+
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">15 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/15.jpg">
+						</div>
+    
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">16 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/16.jpg">
+						</div>
+						<div class="mySlidesArt">
+						  <div class="numbertextArt">17 / 17</div>
+						  <img class="responsiveimg2" src="./images/artGallery/17.jpg">
+						</div>
+						
+						<a class="prevArt" onclick="plusSlides(-1);">&#10094;</a>
+						<a class="nextArt" onclick="plusSlides(1);">&#10095;</a>
+
+						<div class="captionContainerArt">
+						  <p id="captionArt"></p>
+						</div>
+
+						<div class="row">
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+							</div>
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+							</div>
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+							</div>
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+							</div>
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+							</div>
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snow">
+							</div>
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Mountains and fjords">
+							</div>
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Northern Lights">
+							</div>
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/9.jpg" style="width:100%" onclick="currentSlide(9)" alt="Nature and sunrise">
+							</div>
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/10.jpg" style="width:100%" onclick="currentSlide(10)" alt="Snow">
+							</div>
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/11.jpg" style="width:100%" onclick="currentSlide(11)" alt="Mountains and fjords">
+							</div>
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/12.jpg" style="width:100%" onclick="currentSlide(12)" alt="Northern Lights">
+							</div>
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/13.jpg" style="width:100%" onclick="currentSlide(13)" alt="Nature and sunrise">
+							</div>
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/14.jpg" style="width:100%" onclick="currentSlide(14)" alt="Snow">
+							</div>
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/15.jpg" style="width:100%" onclick="currentSlide(15)" alt="Mountains and fjords">
+							</div>
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/16.jpg" style="width:100%" onclick="currentSlide(16)" alt="Northern Lights">
+							</div>
+							<div class="columnArt">
+							  <img class="demoArt cursorArt" src="./images/artGallery/17.jpg" style="width:100%" onclick="currentSlide(17)" alt="Nature and sunrise">
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>			
 		</div>
 	</div><!--headerDiv-->
@@ -765,6 +923,48 @@ function myFunction() {
   } else {
     x.className = "topnav";
   }
+}
+</script>
+
+<script>
+function openModal() {
+  document.getElementById("myModalArt").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModalArt").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidesArt");
+  var dots = document.getElementsByClassName("demoArt");
+  var captionText = document.getElementById("captionArt");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("activeArt", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += "activeArt";
+  captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
 </body>
