@@ -40,11 +40,6 @@ body,h1, p {
   background-color: #333;
 }
 
-.headerDiv1 .center {
-	width:85%;
-	margin:0 auto;
-}
-
 .topnav {
   overflow: hidden;
   text-transform: uppercase;
@@ -131,11 +126,6 @@ body,h1, p {
 
 /* navigation bar */
 
-.profile {
-	width: 85%;
-	margin: 0 auto;
-}
-
 .alignCenter {
 	width: 1210px;
 	margin: 0 auto;
@@ -170,6 +160,12 @@ body,h1, p {
   height:280px;
   max-width:100%;
 }
+
+.responsiveimg2 {
+  max-width: 1000px;
+  max-height: 700px;
+}
+
 
 .profileSection {
   background-repeat:no-repeat;
@@ -301,6 +297,14 @@ h4 {
 
 .left {
 	text-align:left;
+}
+
+.right {
+	text-align:right;
+}
+
+.floatRt {
+	float:right;
 }
 
 .horizantalAlign {
@@ -457,7 +461,7 @@ a:hover {
 
 
 .photoInside {
-	border: #333 solid 1px;
+	border: #d4d3d3 solid 1px;
     line-height: 0;
     position: relative;
 	z-index:1;
@@ -520,6 +524,139 @@ a:hover {
 .courseDescription h5 {
 	margin:5px 0px 5px 0px;
 	}
+	
+/* The Modal for Deveshi's Art Gallery(background) */
+
+.rowArt > .columnArt {
+  padding: 0 8px;
+}
+
+.rowArt:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.columnArt {
+  float: left;
+  width: 25%;
+}
+
+.modalArt {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000;
+}
+
+/* Modal Content */
+.modalContentArt {
+  position: relative;
+  background-color: #000;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.closeArt {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.closeArt:hover,
+.closeArt:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlidesArt {
+  display: none;
+  text-align:center;
+}
+
+.cursorArt {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prevArt,
+.nextArt {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextArt {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevArt:hover,
+.nextArt:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertextArt {
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 20px;
+  position: absolute;
+  top: 0;
+}
+
+imgArt {
+  margin-bottom: -4px;
+}
+
+.captionContainerArt {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demoArt {
+  opacity: 0.6;
+}
+
+.activeArt,
+.demoArt:hover {
+  opacity: 1;
+}
+
+img.hoverShadowArt {
+  transition: 0.3s;
+}
+
+.hoverShadowArt:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /* 100% Image Width on Smaller Screens */
 
