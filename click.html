@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title></title>
+
+ <script type="text/javascript">
+ var items = window.location.search.substr(1).split("&");
+    for (var index = 0; index < items.length; index++) {
+        tmp = items[index].split("=");
+//alert(tmp[1]);
+ window.location.href = "https://www.amazon.com/dp/"+ tmp[1] +"?tag=lovely09e-20&linkCode=ogi&th=1&psc=1";
+
+    }
+</script>
+
+<link rel="stylesheet" href="global.css">
+
+</head>
+
+<body>
+ <div id="wrapper">
+	<div class="headerDiv1" id="contactme" style="height:70px;">
+	</div><!--headerDiv1-->
+		
+
+	<div class="sectionDiv">
+		<div class="alignCenter pd3">
+			<p>Thank you for visiting us. We are taking you to Amazon.</p><br>
+			<button type="button" onclick="location.href='https://www.amazon.com/dp/B09G9BPWNP?tag=lovely09e-20&linkCode=ogi&th=1&psc=1'">Click here if you are not redirected</button>
+		</div>
+	</div><!--sectionDiv-->
+
+	<div class="headerDiv1" id="contactme" style="height:70px;">
+	</div><!--headerDiv1-->
+</div>
+
+</body>
+</html>
