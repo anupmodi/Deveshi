@@ -10,14 +10,17 @@
 
 <title></title>
 
- <script type="text/javascript">
- var items = window.location.search.substr(1).split("&");
+<script type="text/javascript">
+ var items = window.location.search.substr(1).split("?");
     for (var index = 0; index < items.length; index++) {
         tmp = items[index].split("=");
-//alert(tmp[1]);
- window.location.href = "https://www.amazon.com/dp/"+ tmp[1] +"?tag=lovely09e-20&linkCode=ogi&th=1&psc=1";
-
+        if (tmp[0] === "id" ){ window.location.href = "https://www.amazon.com/dp/" + tmp[1] +"?tag=lovely09e-20"; }
+else if (tmp[0] === "keyword" ){ window.location.href = "https://www.amazon.com/gp/search?tag=lovely09e-20&keywords='" + tmp[1] + "'"; }
+else { 
+//window.location.href = "https://www.amazon.com?tag=lovely09e-20"; 
+}
     }
+//window.location.href = "https://www.amazon.com?tag=lovely09e-20";
 </script>
 
 <link rel="stylesheet" href="global.css">
@@ -36,7 +39,7 @@
 	<div class="sectionDiv">
 		<div class="alignCenter pd3">
 			<p>Thank you for visiting us. We are taking you to Amazon.</p><br>
-			<button type="button" class="yelloAmazonButton" onclick="location.href='https://www.amazon.com/dp/B09G9BPWNP?tag=lovely09e-20&linkCode=ogi&th=1&psc=1'">Click here if you are not redirected</button>
+			<button type="button" class="yelloAmazonButton" onclick="location.href='https://www.amazon.com?tag=lovely09e-20'">Click here if you are not redirected</button>
 		</div>
 	</div><!--sectionDiv-->
 
