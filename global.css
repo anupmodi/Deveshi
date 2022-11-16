@@ -695,7 +695,9 @@ img.hoverShadowArt {
 		border-radius: 8px;
 		box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
 		width:260px;
-		height:31px;		
+		height:31px;	
+		padding-top: 4px;
+		text-align: center;		
 	}
 	
 	.yelloAmazonButton:hover {
