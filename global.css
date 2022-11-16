@@ -712,6 +712,11 @@ img.hoverShadowArt {
 	  width:60%;
 	  border-width:1px 0px 1px 1px 
 	}
+	
+	.search-container input[type=text]:focus {
+	  border: solid #ddd;
+	  border-width:1px 0px 1px 1px 
+	}
 
 	.search-container button {
 	  display: inline-block;
