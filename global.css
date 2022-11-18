@@ -335,6 +335,10 @@ a:hover {
  a.underline {
 	 text-decoration :underline;
  }
+ 
+ .inline {
+	 display:inline;
+ }
 
 /* The Modal Window */
 
